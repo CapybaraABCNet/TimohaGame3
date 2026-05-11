@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Приключение Тимохи, Глава 3 (Timoha adventure, Chapter 3)</title>
+	<style>
+		body {
+	background-color: rgb(33, 30, 30);
+	color: white;
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;;
+	padding: 0;
+	margin: 0;
+}
+.game-title {
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: #f5b800;
+    text-shadow: 
+        0 0 5px #ff8c00,
+        0 0 10px #ff8c00,
+        0 0 20px #ff8c00;
+    margin-bottom: 40px;
+       letter-spacing: 2px;
+        animation: flicker 5s infinite;
+}
+.game-title1 {
+            /*font-size: 1vw;
+            font-weight: 700;
+            color: #f5b800;
+            text-shadow: 
+                0 0 5px #ff8c00,
+                0 0 10px #ff8c00,
+                0 0 20px #ff8c00;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            animation: flicker 5s infinite; */
+    color: black;
+    text-align: center;
+    font-size: 1vw;
+}
+.game-title2 {
+            font-size: 1vw;
+            font-weight: 700;
+            color: #f5b800;
+            text-shadow: 
+                0 0 5px #ff8c00,
+                0 0 10px #ff8c00,
+                0 0 20px #ff8c00;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            animation: flicker 5s infinite; */
+    
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+            0 0 5px #ff8c00,
+            0 0 10px #ff8c00,
+            0 0 20px #ff8c00;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+.block {
+	text-align: center;
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: none;
+    max-height: none;
+    margin: 20px auto;
+} 
+button {
+	background-color: gray;
+	border: none;
+    height: 100px;
+    width:100px;
+}
+.hidden {
+    display: none;
+}
+img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 15px;
+}
+.cl {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.h2 {
+    font-size: 50px;
+    color: red;
+    animation: flicker 1s infinite alternate;
+}
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+a {
+    color: black;
+}
+	</style>
+
+</head>
+<body>
+	<div class="block">
+      <h1 class="game-title">Уровни (Levels)</h1>
+      <button>
+        <a href="game1.html">Уровень 1</a>
+      </button>
+      <button>
+        <a href="game2.html">Уровень 2</a>
+      </button>
+      <button command="show-modal" commandfor="z1">
+          Записка N1
+      </button>
+      <button>
+        <a href="game3.html">Уровень 3</a>
+      </button>
+      <button command="show-modal" commandfor="z2">
+          Записка N2
+      </button>
+      <button>
+          <a href="game4.html">Уровень 4</a>
+      </button>
+      <button command="show-modal" commandfor="z3">
+          Записка N3
+      </button>
+      <button>
+          <a href="game5.html">Уровень 5</a>
+      </button>
+      <button command="show-modal" commandfor="z4">
+          Записка N4
+      </button>
+      <dialog id="z1">
+          <h2>Информация об образце №410</h2>
+          <p>
+              Образец №410 это маленькие бургеры, которые могут готовить бургеры и прочую еду. Мы долго их разрабатывали, и в итоге получилось. Есть один ньюанс: они очень агресивные, по этому к ним лучше не приближатся. Если вы увидели что они агрессируют, советуем просто ударить их током. Сообщайте информацию об этом образце отделу безопасности. Официальная записка от директора кафе SweetCapybara co.
+          </p>
+          <a href="glava1.html">Вернуться назад</a>
+      </dialog>
+      <dialog id="z2">
+          <h2>Информация об образце №410 №2</h2>
+          <p>
+              Образец №410 (Маленькие Бургеры): Дополнительная информация.<br>
+              Если образец уже слишком агрессивный, То вы можете их убить, просто прыгнув на его голову, иначе, он съест вас. Будьте осторожны, Официальная записка от директора кафе SweetCapybara co.
+          </p>
+          <a href="glava1.html">Вернуться назад</a>
+      </dialog>
+      <dialog id="z3">
+          <h2>Информация об образце №412</h2>
+          <p>
+              Образец №412 (Бургер): Информация<br>
+              Образец не двигаетя, но есть одно но: если он вас увидет, то скорее всего, он вас убьёт, по этому когда заходите в здание где он, надевайте зелёный халат, так он вас не заметит. Он очень умный, для нашего кафе он сделал много, он готовит ежедневно 750 бургеров лиь для одного кафе, также он сам может делать подчинёных (Образец №410 - Маленькие Бургеры), ну и также просто придумал много рецептов, но он уязвим. Если собрать брокколи, убить всех подчинёных его, то он просто выключится, ну и в самом плохом случае - умрёт. Будьте осторожны, Официальная записка от директора кафе SweetCapybara co.
+          </p>
+          <a href="glava1.html">Вернуться назад</a>
+      </dialog>
+      <dialog id="z4">
+          <h2>Информация об образце №403</h2>
+          <p>
+              Образец №403 (Повар Мясник): Информация<br>
+              Он слишком умён, кроме того что придумал и почти сам разработал образцов №410 и №412 (Маленькие бургеры и Бургер), он умеет анализировать, врать и многое другое, будьте с ним осторожны, хоть возможно он не так силён, но он умён, у него есть подчинённые, у него есть ключ доступа ко всем базам данных и многое другое. Кроме того, мы ещё не нашли его уязвимостей, по этому просто бегите, если он агресирует, и лучше всего кормите его шаурмой, так он будет уже не голодный. Будьте осторожны, Официальная записка от директора кафе SweetCapybara co.
+          </p>
+          <a href="glava1.html">Вернуться назад</a>
+      </dialog>
+    </div>
+</body>
+</html>
