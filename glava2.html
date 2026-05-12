@@ -77,8 +77,8 @@
 button {
 	background-color: gray;
 	border: none;
-    height: 200px;
-    width:300px;
+    height: 100px;
+    width:100px;
 }
 .hidden {
     display: none;
@@ -104,18 +104,41 @@ img {
     50% { opacity: 0.5; }
     100% { opacity: 1; }
 }
+a {
+    color: black;
+}
 	</style>
+
 </head>
 <body>
 	<div class="block">
-      <h2 class="game-title">Приключение Тимохи, Глава 3 (Timoha adventure, Chapter 3)</h1>
-      <h2 class="game-title">Главы (Chapter)</h1>
-      <button>
-        <a href="glava1.html" class="game-title1">1 Глава: Заброшенный фаст-фуд ресторан <br>(1 Chapter: An abandoned fast food restaurant)</a>
+        <h1>2 Глава: Детский приют.</h1>
+        <h2 class="game-title">Уровни (Levels)</h2>
+      <button command="show-modal" commandfor="z5">
+          Записка N5
       </button>
       <button>
-        <a href="glava2.html" class="game-title1">2 Глава: Детский приют<br>(2 Chapter: Kids Playcare)</a>
+          <a href="game6.html">Уровень 1</a>
       </button>
+      <button command="show-modal" commandfor="z6">
+          Записка N6
+      </button>
+      <dialog id="z5">
+          <h2>Информация об образце №870</h2>
+          <p>
+              Образец №870 (Мармеладные Мишки): Информация.
+              Вообще мы не хотели их делать, но заметили, как Образец №403 (Повар Мясник) сделал себе подчинённых виде мармеладных мишек, они были агрессивные, и часто Образец №403 травил их на нас, но когда мы подробно смотрели за 430-тым увидели, что он сам часто избавляется от них с помощью простого пистолета, тем самым узная уязвимость Мармеладных Мишек. В итоге мы решили их взять, но изменили их, сделав добрыми. Но стоит иногда следить за ними, ведь они могут плохо относится к детям из приюта, Официальная записка от директора кафе SweetCapybara co..
+          </p>
+          <a href="glava2.html">Вернуться назад</a>
+      </dialog>
+      <dialog id="z6">
+          <h2>Информация об детском приюте.</h2>
+          <p>
+              Детский приют: Информация.
+              Детский приют задуман как детский дом, но в нём дети могут стать первыми, кто попробует новую еду от кафе SweetCapybara co., в нём дети будут счастливы, и чувствовать себя как дома, будут обучаться, играть, и многое другое.
+          </p>
+          <a href="glava2.html">Вернуться назад</a>
+      </dialog>
     </div>
 </body>
 </html>
